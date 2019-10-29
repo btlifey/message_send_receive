@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/id1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="等待接收短信"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/receive"
+        android:layout_width="203dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:text="接收短信"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id1" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="201dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="10dp"
+        android:text="停止发送"
+        app:layout_constraintStart_toEndOf="@+id/receive"
+        app:layout_constraintTop_toBottomOf="@+id/id1" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="416dp"
+        android:layout_height="78dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="接收号码"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stop" />
+
+    <EditText
+        android:id="@+id/neirong "
+        android:layout_width="406dp"
+        android:layout_height="253dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="短信内容"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="394dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="51dp"
+        android:text="提交"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neirong " />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
